@@ -10,6 +10,8 @@
 			max-width: 40em;
 			width: 88%;
 		}
+
+
 	</style>
 </head>
 <body>
@@ -17,11 +19,29 @@
 	<h1>Countdown Timer</h1>
 
 	<div id="app"></div>
+<input type="text" placeholder="Entrer un nombre de secondes" id="nbSec">
+<button type="button" onclick="recupSec();">Entrer</button>
+
+<!--<a href="" class="button">Start</a> Mauvaises pistes
+<button onclick="myVar=setTimeout(compteur, 3000)">Start</button>
 
 
 	<script>
-		// Project code...
+		function compteur(){
+			alert("Temps écoulé!")
+		}
+		document.write(myVar)
 	</script>
+--> 
+
+<script>
+function recupSec(){
+	var secondes = document.getElementById("nbSec").value;
+}
+
+</script>
+<body onload="recupSec()">
+<h1>Vous avez selectionné: <span id="nbSec"></span></h1>
 
 </body>
 </html>
